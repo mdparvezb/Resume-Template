@@ -5,7 +5,7 @@
 }
 
 body {
-  min-height: 1000px;
+  min-height: 1200px;
   font-family: roboto;
   display: flex;
   align-items: center;
@@ -43,6 +43,21 @@ body {
   height: 1200px;
   width: 100%;
   background-color: #fff;
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr 2fr;
+  padding: 30px;
+}
+
+/* media Query */
+@media screen and (max-width: 1300px) {
+  .right-bar,
+  .left-bar {
+    height: 1500px;
+  }
+
+  .hobby {
+    margin-top: 80px;
+  }
 }
 
 .box1 {
@@ -273,12 +288,6 @@ hr {
 
 .text {
   color: rgba(255, 255, 255, 0.7);
-}
-
-.right-bar {
-  display: grid;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  padding: 30px;
 }
 
 .about-us {
